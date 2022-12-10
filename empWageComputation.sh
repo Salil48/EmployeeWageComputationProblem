@@ -1,5 +1,7 @@
 echo " Welcome to Employee Wage Computation Program"
 
+declare -A day
+
 function calculateWorkingHour() {
 	case $1 in
 		0)
@@ -35,6 +37,8 @@ do
 	((day++));
 echo "Daily wage:"${salary[@]}
 echo "Total wage:"${totalSalary[@]}
+echo "Days:"${day[@]}
+
 done
 echo "Employee has earned $totalSalary $ in a month (Total working Hour : $totalWorkingHour)";
 
