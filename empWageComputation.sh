@@ -21,7 +21,7 @@ totalSalary=0;
 totalWorkingHour=0;
 day=1;
 
-while [[ $day -le 20 && $totalWorkingHour -lt 100 ]]
+while [[ $day -le 20 && $totalWorkingHour -lt 40 ]]
 do
 	wHour=$(calculateWorkingHour $((RANDOM%3)));
 	totalWorkingHour=$(($totalWorkingHour + $wHour));
